@@ -10,7 +10,7 @@ spring:
     name: spring_cloud_config_client
 eureka:
   client:
-    service-url: http://eureka-dev:7001/eureka
+    service-url: http://eureka-dev:6001/eureka
 ---
 server:
   port: 6002
@@ -20,4 +20,4 @@ spring:
     name: spring_cloud_config_client
 eureka:
   client:
-    service-url: http://eureka-test:7001/eureka
+    service-url: http://eureka-test:6002/eureka
