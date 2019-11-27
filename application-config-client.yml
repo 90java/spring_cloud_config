@@ -3,7 +3,7 @@ spring:
     active: dev
 ---
 server:
-  port: 6001
+  port: 6101
 spring:
   profiles: dev
   application:
@@ -13,10 +13,10 @@ eureka:
     registerWithEureka: false #false 表示不想注册中心注册自己
     fetchRegistry: false       # false 表示自己端就是注册中心，我的职责就是i维护服务实例，不需要去检索服务
     service-url:
-      defaultZone: http://eureka-dev:6001/eureka
+      defaultZone: http://eureka-dev:6101/eureka
 ---
 server:
-  port: 6002
+  port: 6102
 spring:
   profiles: test
   application:
@@ -26,4 +26,4 @@ eureka:
     registerWithEureka: false #false 表示不想注册中心注册自己
     fetchRegistry: false       # false 表示自己端就是注册中心，我的职责就是i维护服务实例，不需要去检索服务
     service-url: 
-      defaultZone: http://eureka-test:6002/eureka
+      defaultZone: http://eureka-test:6102/eureka
